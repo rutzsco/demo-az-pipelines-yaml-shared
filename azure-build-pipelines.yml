@@ -1,3 +1,14 @@
+resources:
+  repositories:
+  - repository: Shared 
+    type: github
+    endpoint: rutzsco
+    name: rutzsco/demo-az-pipelines-yaml-shared
+  - repository: App 
+    type: github
+    endpoint: rutzsco
+    name: rutzsco/demo-az-pipelines-yaml-app
+
 trigger:
 - main
 
