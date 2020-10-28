@@ -1,6 +1,6 @@
 # demo-az-pipelines-yaml-shared
 
-V2
+V3
 
 ## Overview
 
