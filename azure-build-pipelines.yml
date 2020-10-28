@@ -45,5 +45,5 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: Infrastructure'
   inputs:
-    PathtoPublish: 'demo-az-pipelines-yaml-app/Infrastructure'
+    PathtoPublish: 'demo-az-pipelines-yaml-shared/Infrastructure'
     ArtifactName: Infrastructure
