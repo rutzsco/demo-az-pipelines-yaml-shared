@@ -19,6 +19,9 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- checkout: self
+- checkout: App
+
 - task: DotNetCoreCLI@2
   displayName: 'Build project'
   inputs:
