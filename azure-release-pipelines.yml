@@ -3,7 +3,7 @@ trigger: none
 resources:
   pipelines:
   - pipeline: build
-    source: 'demo-function-yaml-cicd - Build'
+    source: 'demo-az-pipelines-yaml-shared - Build'
   
 variables:
   vmImageName: 'vs2017-win2016'
@@ -18,15 +18,5 @@ stages:
     functionAppName: 'demo-function-api-ci'
     resourceGroupName: 'demo-function-api-ci'
     storageAccountName: 'azfunctionsdapici'
-    region: 'Central US'
-    packageName: 'Demo.Function.API.zip'
-- template: azure-release-pipelines-stage-template.yml
-  parameters:
-    stageName: 'QA'
-    environment: 'API-QA'
-    azureSubscription: ${{ variables.azureSubscription }}
-    functionAppName: 'demo-function-api-qa'
-    resourceGroupName: 'demo-function-api-qa'
-    storageAccountName: 'azfunctionsdapiqa'
     region: 'Central US'
     packageName: 'Demo.Function.API.zip'
